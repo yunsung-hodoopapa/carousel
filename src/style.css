@@ -1,0 +1,26 @@
+/* 가운데 정렬을 위한 코드이니 되도록 건들지 않는 것을 추천합니다. */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 이 아래부터는 필요에 따라 삭제, 변경해도 됩니다 */
+.title {
+  color: blue;
+}
+
+.section {
+  border: 1px solid red;
+}
+
+.carousel-wrap {
+  width: 400px;
+  height: 100px;
+  background-color: pink;
+}
