@@ -12,15 +12,39 @@ body {
 
 /* 이 아래부터는 필요에 따라 삭제, 변경해도 됩니다 */
 .title {
-  color: blue;
+  color: tomato;
 }
 
 .section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+i {
+  color: tomato;
+  font-size: 30px;
 }
 
 .carousel-wrap {
+  display: flex;
+  align-items: center;
   width: 400px;
-  height: 100px;
-  background-color: pink;
+  height: 400px;
+  /* background-color: pink; */
+  margin: 0 8px;
+}
+
+.dotBtns {
+  /* width: 400px; */
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 8px 0;
+  /* justify-content: space-around; */
+}
+
+li {
+  list-style: none;
+  margin: 0 8px;
 }
