@@ -11,16 +11,24 @@ body {
 }
 
 /* 이 아래부터는 필요에 따라 삭제, 변경해도 됩니다 */
-.title {
-  color: blue;
-}
 
 .section {
-  border: 1px solid red;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
 }
 
-.carousel-wrap {
-  width: 400px;
-  height: 100px;
-  background-color: pink;
+.section > .left_button {
+  flex: 1;
+}
+
+.section > .carousel__main {
+  flex: 8;
+
+  text-align: center;
+}
+
+.section > .right_button {
+  flex: 1;
 }
