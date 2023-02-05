@@ -16,11 +16,58 @@ body {
 }
 
 .section {
-  border: 1px solid red;
+  width: 480px;
+  height: 100px;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .carousel-wrap {
-  width: 400px;
+  width: 100%;
   height: 100px;
-  background-color: pink;
+  display: flex;
+  background-color: skyblue;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image {
+  width: 400px;
+  height: 60px;
+  background-color: white;
+  margin: 15px auto auto;
+}
+
+button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  color: skyblue;
+  font-size: 8px;
+  font-weight: 600;
+  position: absolute;
+  top: 40%;
+}
+
+.dot-carousel {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 80%;
+  left: 39%;
+  width: 25%;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
 }
