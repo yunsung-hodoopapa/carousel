@@ -83,30 +83,35 @@ rBtn.addEventListener("click", () => {
  */
 const moveIamge = (direction, n) => {
   let before = dotCnt;
-  if (direction === "R") {
-    distance -= imageSize;
-    dotCnt++;
+  switch (direction) {
+    case "R":
+      distance -= imageSize;
+      dotCnt++;
 
-    if (distance < -imageSize * (images.length - 1)) {
-      distance = 0;
-    }
-    if (dotCnt >= dots.length) {
-      dotCnt = 0;
-    }
-  } else if (direction === "L") {
-    distance += imageSize;
-    dotCnt--;
+      if (distance < -imageSize * (images.length - 1)) {
+        distance = 0;
+      }
+      if (dotCnt >= dots.length) {
+        dotCnt = 0;
+      }
+      break;
+    case "L":
+      distance += imageSize;
+      dotCnt--;
 
-    if (distance > 0) {
-      distance = -imageSize * (images.length - 1);
-    }
-    if (dotCnt < 0) {
-      dotCnt = dots.length - 1;
-    }
-  } else {
-    distance = -n * imageSize;
-    dotCnt = n;
+      if (distance > 0) {
+        distance = -imageSize * (images.length - 1);
+      }
+      if (dotCnt < 0) {
+        dotCnt = dots.length - 1;
+      }
+      break;
+    default:
+      distance = -n * imageSize;
+      dotCnt = n;
+      break;
   }
+
   carousel.style.transform = `translate(${distance}px)`;
   dots[before].style.backgroundColor = "white";
   dots[dotCnt].style.backgroundColor = "black";
