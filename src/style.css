@@ -16,7 +16,6 @@ body {
 }
 
 .section {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
 }
@@ -31,17 +30,14 @@ i {
   align-items: center;
   width: 400px;
   height: 400px;
-  /* background-color: pink; */
   margin: 0 8px;
 }
 
-.dotBtns {
-  /* width: 400px; */
+.dotButtons {
   list-style: none;
   display: flex;
   padding: 0;
   margin: 8px 0;
-  /* justify-content: space-around; */
 }
 
 li {
